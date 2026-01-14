@@ -1,4 +1,4 @@
-Disclaimer: The dataset was obtained from Soccermatics Pro course and does not belong to me.
+N.B.: The dataset was obtained from Soccermatics Pro course and does not belong to me.
 
 # Expected Danger Model
 
