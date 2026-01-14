@@ -1,0 +1,171 @@
+Reading 5588080.json
+Type of data: <class 'dict'>
+Keys: ['meta', 'events', 'match', 'substitutions', 'teams', 'players']
+Events type: <class 'list'>
+Number of events: 1611
+First event keys: ['id', 'matchId', 'matchPeriod', 'minute', 'second', 'matchTimestamp', 'videoTimestamp', 'relatedEventId', 'type', 'location', 'team', 'opponentTeam', 'player', 'pass', 'shot', 'groundDuel', 'aerialDuel', 'infraction', 'carry', 'possession']
+
+--- PASS EVENT ---
+{
+  "id": 2263270249,
+  "matchId": 5588080,
+  "matchPeriod": "1H",
+  "minute": 7,
+  "second": 47,
+  "matchTimestamp": "00:07:47.232",
+  "videoTimestamp": "468.232176",
+  "relatedEventId": 2263270255,
+  "type": {
+    "primary": "pass",
+    "secondary": [
+      "lateral_pass",
+      "short_or_medium_pass"
+    ]
+  },
+  "location": {
+    "x": 75,
+    "y": 47
+  },
+  "team": {
+    "id": 1616,
+    "name": "Fulham"
+  },
+  "opponentTeam": {
+    "id": 1611,
+    "name": "Manchester United"
+  },
+  "player": {
+    "id": 488326,
+    "name": "Rodrigo Muniz",
+    "position": "CF"
+  },
+  "pass": {
+    "accurate": true,
+    "angle": 66,
+    "height": null,
+    "length": 17,
+    "recipient": {
+      "id": 225947,
+      "name": "Adama Traor\u00e9",
+      "position": "RW"
+    },
+    "endLocation": {
+      "x": 82,
+      "y": 70
+    }
+  },
+  "shot": null,
+  "groundDuel": null,
+  "aerialDuel": null,
+  "infraction": null,
+  "carry": null,
+  "possession": {
+    "id": 2263270222,
+    "duration": "62.802453",
+    "types": [
+      "attack",
+      "throw_in"
+    ],
+    "eventsNumber": 24,
+    "eventIndex": 19,
+    "startLocation": {
+      "x": 58,
+      "y": 100
+    },
+    "endLocation": {
+      "x": 89,
+      "y": 74
+    },
+    "team": {
+      "id": 1616,
+      "name": "Fulham"
+    },
+    "attack": {
+      "withShot": true,
+      "withShotOnGoal": false,
+      "withGoal": false,
+      "flank": "right",
+      "xg": 0.0129
+    }
+  }
+}
+
+--- SHOT EVENT ---
+{
+  "id": 2263270260,
+  "matchId": 5588080,
+  "matchPeriod": "1H",
+  "minute": 7,
+  "second": 52,
+  "matchTimestamp": "00:07:52.247",
+  "videoTimestamp": "473.247606",
+  "relatedEventId": null,
+  "type": {
+    "primary": "shot",
+    "secondary": [
+      "opportunity",
+      "touch_in_box"
+    ]
+  },
+  "location": {
+    "x": 89,
+    "y": 74
+  },
+  "team": {
+    "id": 1616,
+    "name": "Fulham"
+  },
+  "opponentTeam": {
+    "id": 1611,
+    "name": "Manchester United"
+  },
+  "player": {
+    "id": 225947,
+    "name": "Adama Traor\u00e9",
+    "position": "RW"
+  },
+  "pass": null,
+  "shot": {
+    "bodyPart": "right_foot",
+    "isGoal": false,
+    "onTarget": false,
+    "goalZone": "otr",
+    "xg": 0.01286,
+    "postShotXg": null,
+    "goalkeeperActionId": null,
+    "goalkeeper": null
+  },
+  "groundDuel": null,
+  "aerialDuel": null,
+  "infraction": null,
+  "carry": null,
+  "possession": {
+    "id": 2263270222,
+    "duration": "62.802453",
+    "types": [
+      "attack",
+      "throw_in"
+    ],
+    "eventsNumber": 24,
+    "eventIndex": 23,
+    "startLocation": {
+      "x": 58,
+      "y": 100
+    },
+    "endLocation": {
+      "x": 89,
+      "y": 74
+    },
+    "team": {
+      "id": 1616,
+      "name": "Fulham"
+    },
+    "attack": {
+      "withShot": true,
+      "withShotOnGoal": false,
+      "withGoal": false,
+      "flank": "right",
+      "xg": 0.0129
+    }
+  }
+}
