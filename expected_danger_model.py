@@ -6,17 +6,17 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Config
-data_dir = os.getcwd()
-passes_file = os.path.join(data_dir, "passes_dataset.parquet")
-minutes_file = os.path.join(data_dir, "minutes.parquet")
-players_file = os.path.join(data_dir, "players.parquet")
 
-# Load Data
+data_dir = os.getcwd()
+passes_file = os.path.join(data_dir, "data_tables", "passes_dataset.parquet")
+minutes_file = os.path.join(data_dir, "data_tables", "minutes.parquet")
+players_file = os.path.join(data_dir, "data_tables", "players.parquet")
+
+
 print("Loading data...")
 df = pd.read_parquet(passes_file)
 
-# Feature Engineering
+# feature Eng.
 df['start_x_sq'] = df['x']**2
 df['start_y_sq'] = df['y']**2
 df['end_x_sq'] = df['end_x']**2
@@ -77,7 +77,7 @@ try:
 except Exception as e:
     print(f"Error in ranking: {e}")
 
-# Visualizations
+
 print("\nGenerating visualizations...")
 sns.set_theme(style="whitegrid")
 
