@@ -12,7 +12,6 @@ env/
 .vscode/
 .idea/
 
-data_tables/passes_dataset.parquet
 *.png
 report.md
 inspection_output.txt
