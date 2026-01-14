@@ -7,24 +7,23 @@ import seaborn as sns
 import os
 from sklearn.linear_model import LogisticRegression, LinearRegression
 
-# Page Config
+
 st.set_page_config(page_title="Expected Danger Dashboard", layout="wide")
 
 st.title("Premier League: Expected Danger Dashboard")
-st.markdown("Explore player threat creation using the Expected Danger (ED) model.")
 
 @st.cache_data
 def load_data():
     data_dir = os.getcwd()
-    passes_file = os.path.join(data_dir, "passes_dataset.parquet")
-    players_file = os.path.join(data_dir, "players.parquet")
-    minutes_file = os.path.join(data_dir, "minutes.parquet")
+    passes_file = os.path.join(data_dir, "data_tables", "passes_dataset.parquet")
+    players_file = os.path.join(data_dir, "data_tables", "players.parquet")
+    minutes_file = os.path.join(data_dir, "data_tables", "minutes.parquet")
     
     df = pd.read_parquet(passes_file)
     players = pd.read_parquet(players_file)
     mins = pd.read_parquet(minutes_file)
     
-    # Simple feature engineering
+ 
     df['start_x_sq'] = df['x']**2
     df['start_y_sq'] = df['y']**2
     df['end_x_sq'] = df['end_x']**2
@@ -66,7 +65,7 @@ def draw_pitch(ax):
 
 df, stats = load_data()
 
-# Sidebar
+
 st.sidebar.header("Filters")
 min_mins = st.sidebar.slider("Minimum Minutes", 0, 3000, 500)
 selected_role = st.sidebar.multiselect("Positions", options=stats['role'].unique(), default=stats['role'].unique())
