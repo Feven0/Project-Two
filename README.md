@@ -5,6 +5,9 @@ N.B.: The dataset was obtained from Soccermatics Pro course and does not belong 
 This project analyzes Premier League event data to calculate "Expected Danger" (ED) for passes. It includes a data processing pipeline, statistical analysis, and a Streamlit dashboard.
 
 ## How to use
+If you choose google colab notebook, run the ipynb after uploading the datasets too.
+
+If you choose to run them locally in an IDE/CLI: 
 
 Execute the entire pipeline (prepare data -> analysis -> dashboard(streamlit)) in one command:
 ```bash
