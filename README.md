@@ -31,6 +31,9 @@ Alternatively, run steps individually:
 
 The project uses the **Parquet** format for data storage. Parquet is a columnar storage format that provides several advantages over traditional CSV files like speed and compression.
 
+
+The dataset was obtained from Soccermatics Pro course and does not belong to me.
+
 ### Dataset Overview (located in `data_tables/`):
 - `players.parquet`: Mapping of player IDs to names, roles, and nationalities
 - `matches.parquet`: Metadata for all games, including match labels and dates
